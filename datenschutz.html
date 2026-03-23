@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Datenschutz – Weinheimer IT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue-900: #042C53; --blue-800: #0C447C; --blue-400: #378ADD;
+      --blue-200: #85B7EB; --gray-900: #0f1117; --gray-800: #1a1e2a;
+      --gray-700: #252b39; --gray-300: #a0aec0; --white: #ffffff;
+      --font: 'DM Sans', sans-serif; --mono: 'DM Mono', monospace;
+    }
+    body { font-family: var(--font); background: var(--gray-900); color: var(--white); line-height: 1.6; }
+
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 48px; background: rgba(4,44,83,0.95);
+      border-bottom: 1px solid rgba(55,138,221,0.15);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 600; color: var(--white); text-decoration: none; }
+    .nav-logo-icon { width: 32px; height: 32px; background: var(--blue-400); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .nav-back { color: var(--blue-200); font-size: 14px; text-decoration: none; }
+    .nav-back:hover { color: var(--white); }
+
+    .content { max-width: 720px; margin: 0 auto; padding: 64px 48px 96px; }
+    .page-tag { font-size: 11px; font-family: var(--mono); color: var(--blue-400); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
+    h1 { font-size: 36px; font-weight: 600; letter-spacing: -1px; margin-bottom: 16px; }
+    .intro { font-size: 15px; color: var(--gray-300); margin-bottom: 48px; line-height: 1.8; }
+    h2 { font-size: 18px; font-weight: 500; color: var(--white); margin: 40px 0 12px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,0.06); }
+    h2:first-of-type { border-top: none; padding-top: 0; }
+    h3 { font-size: 15px; font-weight: 500; color: var(--white); margin: 20px 0 8px; }
+    p { font-size: 15px; color: var(--gray-300); line-height: 1.8; margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { font-size: 15px; color: var(--gray-300); line-height: 1.8; margin-bottom: 4px; }
+    a { color: var(--blue-400); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card { background: var(--gray-800); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 24px 28px; margin: 16px 0; }
+    .card p { margin-bottom: 4px; }
+    .highlight { color: var(--white); font-weight: 500; }
+
+    footer { background: var(--blue-900); padding: 24px 48px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; border-top: 1px solid rgba(55,138,221,0.15); }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 13px; color: var(--blue-200); text-decoration: none; }
+    .footer-copy { font-size: 12px; color: var(--blue-200); }
+
+    @media (max-width: 600px) {
+      nav { padding: 16px 24px; }
+      .content { padding: 40px 24px 64px; }
+      footer { padding: 20px 24px; flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">
+      <svg width="32" height="32" viewBox="0 0 68 68" fill="none"><rect x="0" y="0" width="68" height="68" rx="18" fill="#042C53"/><path d="M3 57 Q3 44 13 44 Q10 27 27 24 Q35 22 42 26 Q49 22 55 26 Q66 30 64 44 Q73 45 72 56 Q71 65 60 65 L13 65 Q3 65 3 57 Z" fill="#185FA5" opacity="0.5"/><path d="M3 57 Q3 44 13 44 Q10 27 27 24 Q35 22 42 26 Q49 22 55 26 Q66 30 64 44 Q73 45 72 56 Q71 65 60 65 L13 65 Q3 65 3 57 Z" fill="none" stroke="#378ADD" stroke-width="1" opacity="0.5"/><circle cx="34" cy="27" r="5" fill="#378ADD"/><circle cx="17" cy="57" r="3.5" fill="#85B7EB"/><circle cx="51" cy="57" r="3.5" fill="#85B7EB"/><line x1="34" y1="27" x2="17" y2="57" stroke="#378ADD" stroke-width="2.2" stroke-linecap="round"/><line x1="34" y1="27" x2="51" y2="57" stroke="#378ADD" stroke-width="2.2" stroke-linecap="round"/><line x1="17" y1="57" x2="51" y2="57" stroke="#85B7EB" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </div>
+    Weinheimer IT
+  </a>
+  <a href="index.html" class="nav-back">← Zurück zur Startseite</a>
+</nav>
+
+<div class="content">
+  <div class="page-tag">// Rechtliches</div>
+  <h1>Datenschutzerklärung</h1>
+  <p class="intro">Der Schutz Ihrer persönlichen Daten ist mir wichtig. Diese Datenschutzerklärung informiert Sie darüber, welche Daten auf dieser Website erhoben werden, wie sie verwendet werden und welche Rechte Sie haben. Stand: März 2026.</p>
+
+  <h2>1. Verantwortlicher</h2>
+  <div class="card">
+    <p><span class="highlight">Elia Weinheimer</span></p>
+    <p>Weinheimer IT</p>
+    <p>Friedrich-Ebert-Straße 9</p>
+    <p>76829 Landau in der Pfalz</p>
+    <p style="margin-top: 10px;">E-Mail: <a href="/cdn-cgi/l/email-protection#bed7d0d8d1fec9dbd7d0d6dbd7d3dbcc93d7ca90dadb"><span class="__cf_email__" data-cfemail="3e575058517e495b5750565b57535b4c13574a105a5b">[email&#160;protected]</span></a></p>
+  </div>
+
+  <h2>2. Hosting</h2>
+  <p>Diese Website wird über <span class="highlight">GitHub Pages</span> (GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA) gehostet. Beim Abruf der Website werden automatisch Verbindungsdaten an GitHub-Server übertragen. Dies umfasst Ihre IP-Adresse, Browsertyp, Betriebssystem und den Zeitpunkt des Zugriffs. Diese Daten werden von GitHub zur Bereitstellung des Dienstes verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse am Betrieb der Website).</p>
+  <p>Weitere Informationen zum Datenschutz bei GitHub finden Sie unter: <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement" target="_blank">GitHub Privacy Statement</a></p>
+
+  <h2>3. Kontaktformular</h2>
+  <p>Wenn Sie das Kontaktformular auf dieser Website nutzen, werden die von Ihnen eingegebenen Daten (Name, E-Mail-Adresse, Betreff und Nachricht) verarbeitet, um Ihre Anfrage zu beantworten.</p>
+  <p><span class="highlight">Hinweis:</span> Das Kontaktformular auf dieser Website sendet Daten derzeit direkt per E-Mail. Ihre Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte weitergegeben.</p>
+  <ul>
+    <li>Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (Vertragsanbahnung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse)</li>
+    <li>Speicherdauer: Ihre Daten werden gelöscht, sobald die Anfrage abschließend bearbeitet ist, spätestens nach 3 Jahren</li>
+  </ul>
+
+  <h2>4. Google Fonts</h2>
+  <p>Diese Website lädt Schriftarten von <span class="highlight">Google Fonts</span> (Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA). Dabei wird Ihre IP-Adresse an Google-Server in den USA übertragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+  <p>Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank">Google Datenschutzerklärung</a></p>
+
+  <h2>5. Cookies</h2>
+  <p>Diese Website verwendet keine Cookies und kein Tracking. Es werden keine Analyse- oder Werbe-Tools eingesetzt.</p>
+
+  <h2>6. Ihre Rechte</h2>
+  <p>Sie haben gegenüber mir folgende Rechte bezüglich Ihrer personenbezogenen Daten:</p>
+  <ul>
+    <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+    <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+    <li>Recht auf Löschung (Art. 17 DSGVO)</li>
+    <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+    <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
+    <li>Recht auf Widerspruch (Art. 21 DSGVO)</li>
+  </ul>
+  <p>Zur Ausübung Ihrer Rechte wenden Sie sich an: <a href="/cdn-cgi/l/email-protection#aec7c0c8c1eed9cbc7c0c6cbc7c3cbdc83c7da80cacb"><span class="__cf_email__" data-cfemail="422b2c242d0235272b2c2a272b2f27306f2b366c2627">[email&#160;protected]</span></a></p>
+
+  <h2>7. Beschwerderecht</h2>
+  <p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer Daten zu beschweren. Zuständig für Rheinland-Pfalz ist:</p>
+  <div class="card">
+    <p><span class="highlight">Landesbeauftragte für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz</span></p>
+    <p>Hintere Bleiche 34</p>
+    <p>55116 Mainz</p>
+    <p style="margin-top: 8px;"><a href="https://www.datenschutz.rlp.de" target="_blank">www.datenschutz.rlp.de</a></p>
+  </div>
+
+  <h2>8. Aktualität</h2>
+  <p>Diese Datenschutzerklärung ist aktuell gültig und hat den Stand März 2026. Durch die Weiterentwicklung der Website kann eine Anpassung dieser Erklärung notwendig werden.</p>
+</div>
+
+<foo
