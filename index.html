@@ -170,16 +170,71 @@
     .hero-content > *:nth-child(3) { animation-delay: 0.3s; }
     .hero-content > *:nth-child(4) { animation-delay: 0.4s; }
 
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px; cursor: pointer;
+      background: none; border: none; padding: 4px;
+    }
+    .hamburger span {
+      width: 22px; height: 2px; background: var(--blue-200);
+      border-radius: 2px; transition: all 0.3s;
+    }
+    .mobile-menu {
+      display: none; position: fixed; top: 65px; left: 0; right: 0;
+      background: rgba(4,44,83,0.98); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(55,138,221,0.2);
+      padding: 20px 24px; z-index: 99; flex-direction: column; gap: 4px;
+    }
+    .mobile-menu a {
+      color: var(--blue-100); font-size: 16px; text-decoration: none;
+      padding: 12px 0; border-bottom: 1px solid rgba(55,138,221,0.1);
+      display: block;
+    }
+    .mobile-menu a:last-child { border-bottom: none; }
+    .mobile-menu.open { display: flex; }
+
     @media (max-width: 900px) {
-      nav { padding: 16px 24px; } .nav-links { display: none; }
-      .hero { padding: 100px 24px 60px; }
-      .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+      .hamburger { display: flex; }
+      nav { padding: 14px 20px; }
+      .nav-links { display: none; }
+      .nav-cta { padding: 8px 16px; font-size: 13px; }
+
+      .hero { padding: 90px 20px 50px; }
+      .hero-inner { grid-template-columns: 1fr; gap: 0; }
+      .hero-content { padding: 28px 22px; border-radius: 16px; }
       .hero-visual { display: none; }
-      section { padding: 64px 24px; }
-      .services-grid { grid-template-columns: 1fr; }
-      .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+      .hero-bg { background-position: center center; }
+      h1 { font-size: 30px; letter-spacing: -1px; }
+      .hero-sub { font-size: 15px; }
+      .hero-actions { flex-direction: column; gap: 10px; }
+      .btn-primary, .btn-secondary { text-align: center; padding: 13px 20px; font-size: 14px; }
+
+      section { padding: 52px 20px; }
+      h2 { font-size: 26px; }
+      .section-sub { font-size: 14px; margin-bottom: 32px; }
+
+      .services-grid { grid-template-columns: 1fr; gap: 14px; }
+      .service-card { padding: 22px; }
+
+      .about-grid { grid-template-columns: 1fr; gap: 36px; }
+      .about-stats { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .stat-card { padding: 18px; }
+      .stat-number { font-size: 28px; }
+
+      .contact-grid { grid-template-columns: 1fr; gap: 36px; }
       .form-row { grid-template-columns: 1fr; }
-      footer { padding: 24px; flex-direction: column; align-items: flex-start; }
+      input, textarea, select { font-size: 16px; }
+
+      footer { padding: 20px; flex-direction: column; align-items: flex-start; gap: 12px; }
+      .footer-links { flex-wrap: wrap; gap: 16px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-content { padding: 22px 18px; }
+      h1 { font-size: 26px; }
+      .hero-tag { font-size: 11px; }
+      .about-stats { grid-template-columns: 1fr; }
+      .stat-number { font-size: 32px; }
+      .service-card h3 { font-size: 15px; }
     }
   </style>
 </head>
@@ -208,7 +263,16 @@
     <li><a href="#kontakt">Kontakt</a></li>
   </ul>
   <a href="#kontakt" class="nav-cta">Anfragen</a>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menü">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#leistungen" onclick="toggleMenu()">Leistungen</a>
+  <a href="#ueber-mich" onclick="toggleMenu()">Über mich</a>
+  <a href="#kontakt" onclick="toggleMenu()">Kontakt</a>
+  <a href="#kontakt" onclick="toggleMenu()" style="color: var(--blue-400); font-weight: 500;">Jetzt anfragen →</a>
+</div>
 
 <section class="hero">
   <div class="hero-bg"></div>
